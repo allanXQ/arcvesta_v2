@@ -1,4 +1,5 @@
-/* #hero {
-  background-image: url("../../public/images/hero.jpeg");
+#hero {
+  background-image: url("../../public/images/hero.jpg");
   background-size: cover;
-} */
+  background-repeat: no-repeat;
+}
