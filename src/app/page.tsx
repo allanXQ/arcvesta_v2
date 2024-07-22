@@ -131,16 +131,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="services" className="flex flex-col items-center px-10 gap">
+      <div id="services" className="flex flex-col items-center px-10 gap-10">
         <div id="services-header" className="flex flex-col items-center gap-1">
           <p className="text-xs font-bold">Whatever you need</p>
           <h2 className="text-3xl font-bold text-center">
             We have the solution
           </h2>
         </div>
-        <div id="services-container" className="flex flex-col gap-4">
-          <div className="flex gap-4 justify-center items-center">
-            <div id="service-text" className="flex flex-col gap-4">
+        <div id="services-container" className="flex flex-col gap-16">
+          <div className="flex gap-4 justify-center items-center flex-wrap">
+            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Website Design and Development
               </h2>
@@ -175,8 +175,8 @@ export default function Home() {
               alt="web design"
             />
           </div>
-          <div className="flex flex-row-reverse gap-4 justify-center items-center">
-            <div id="service-text" className="flex flex-col gap-4">
+          <div className="flex flex-row-reverse gap-4 justify-center items-center flex-wrap">
+            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Web Application Development
               </h2>
@@ -208,12 +208,15 @@ export default function Home() {
               alt="web design"
             />
           </div>
-          <div className="flex gap-4 justify-center items-center">
-            <div id="service-text" className="flex flex-col gap-4">
-              <h2 className="font-bold text-2xl">
+          <div className="flex gap-4 justify-center items-center flex-wrap">
+            <div
+              id="service-text"
+              className="flex flex-col gap-4 items-center justify-center max-w-xl"
+            >
+              <h2 className="font-bold text-2xl text-center">
                 Mobile Application Development
               </h2>
-              <p>
+              <p className="">
                 In today's fast-paced digital world, having a robust mobile
                 presence is crucial for any business. Our mobile app development
                 services are designed to create high-performance, feature-rich
@@ -222,19 +225,6 @@ export default function Home() {
                 deliver apps that not only align with your brand’s identity but
                 also provide an engaging and seamless user experience.
               </p>
-              {/* <div className="flex gap-x-60 gap-y-5 flex-wrap items-center justify-center">
-                {appfeatures.map((feature) => (
-                  <div key={feature} className="flex gap-2 items-center">
-                    <Image
-                      src="/images/icons/cube.png"
-                      alt="cube"
-                      width={20}
-                      height={20}
-                    />
-                    <p>{feature}</p>
-                  </div>
-                ))}
-              </div> */}
               <div className="flex gap-4">
                 <DarkButton>See Pricing</DarkButton>
                 <LightButton>Portfolio</LightButton>
@@ -278,11 +268,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="cta" className="flex flex-col items-center gap-2">
-        <h2 className="text-3xl font-bold text-center">
+      <div id="cta" className="flex flex-col items-center gap-2 max-w-xl">
+        <h2 className="text-3xl font-bold text-center text-wrap">
           Ready to take your business to the next level?
         </h2>
-        <p className="text-center">
+        <p className="text-center text-wrap">
           Contact us today for a free consultation and quote on your project.
         </p>
         <div className="flex gap-4">
@@ -290,6 +280,15 @@ export default function Home() {
           <LightButton>Learn More</LightButton>
         </div>
       </div>
+      <footer className="flex flex-col items-center gap-4">
+        <p>LOGO</p>
+
+        <div className="flex gap-4">
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+        </div>
+        <p>© 2024 Company Name. All rights reserved.</p>
+      </footer>
     </main>
   );
 }
