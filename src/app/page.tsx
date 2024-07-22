@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./page.css";
+import fs from "fs";
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
           <p>LOGO</p>
           <ul className="flex gap-4">
             <li>Home</li>
-            <li>About Us</li>
             <li>Services</li>
             <li>Portfolio</li>
+            <li>Pricing</li>
+            <li>About Us</li>
             <li>Contact</li>
           </ul>
           <button>Get Started</button>
@@ -41,53 +43,30 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <div id="services" className="flex flex-col items-center p-10 gap-4">
-          <h2 className="text-3xl font-bold">Our Services</h2>
-          <p className="text-center">
-            We offer a wide range of services to help you achieve your business
-            goals.
-          </p>
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-center gap-4">
+      <div id="services" className="flex flex-col items-center">
+        <p className="text-xs font-bold">Whatever you need</p>
+        <h2 className="text-3xl font-bold text-center">We have the solution</h2>
+      </div>
+      <div id="tech-exertise">
+        <h2 className="text-3xl font-bold text-center">
+          Technological Expertise
+        </h2>
+        <p className="text-center">
+          Transform your digital vision into reality with our innovative and
+          proficient tech solutions. We bring the future of technology to your
+          fingertips.
+        </p>
+        <div id="tech-logos">
+          <div id="tech-logos" className="flex gap-4 flex-wrap">
+            {fs.readdirSync("public/images/techlogos").map((fileName) => (
               <Image
-                src="/web-design.svg"
-                alt="web design"
+                key={fileName}
+                src={`/images/techlogos/${fileName}`}
+                alt={fileName}
                 width={100}
                 height={100}
               />
-              <h3>Web Design</h3>
-              <p>
-                We design websites that are visually appealing, user-friendly,
-                and optimized for search engines.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4">
-              <Image
-                src="/web-development.svg"
-                alt="web development"
-                width={100}
-                height={100}
-              />
-              <h3>Web Development</h3>
-              <p>
-                We develop custom websites and web applications that are
-                tailored to your business needs.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4">
-              <Image
-                src="/mobile-apps.svg"
-                alt="mobile apps"
-                width={100}
-                height={100}
-              />
-              <h3>Mobile Apps</h3>
-              <p>
-                We create mobile applications that are user-friendly, fast, and
-                secure.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
