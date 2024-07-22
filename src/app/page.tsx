@@ -42,6 +42,8 @@ const webappfeatures = [
   },
 ];
 
+const appfeatures = ["Android", "IOS", "Cross-Platform"];
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-w-full gap-20">
@@ -146,6 +148,45 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+              <div className="flex gap-4">
+                <DarkButton>See Pricing</DarkButton>
+                <LightButton>Portfolio</LightButton>
+              </div>
+            </div>
+            <Image
+              src="/images/design1.png"
+              width={650}
+              height={650}
+              alt="web design"
+            />
+          </div>
+          <div className="flex gap-4 justify-center items-center">
+            <div id="service-text" className="flex flex-col gap-4">
+              <h2 className="font-bold text-2xl">
+                Mobile Application Development
+              </h2>
+              <p>
+                In today's fast-paced digital world, having a robust mobile
+                presence is crucial for any business. Our mobile app development
+                services are designed to create high-performance, feature-rich
+                applications for iOS, Android, and cross-platform environments.
+                We combine cutting-edge technology with creative design to
+                deliver apps that not only align with your brand’s identity but
+                also provide an engaging and seamless user experience.
+              </p>
+              {/* <div className="flex gap-x-60 gap-y-5 flex-wrap items-center justify-center">
+                {appfeatures.map((feature) => (
+                  <div key={feature} className="flex gap-2 items-center">
+                    <Image
+                      src="/images/icons/cube.png"
+                      alt="cube"
+                      width={20}
+                      height={20}
+                    />
+                    <p>{feature}</p>
+                  </div>
+                ))}
+              </div> */}
               <div className="flex gap-4">
                 <DarkButton>See Pricing</DarkButton>
                 <LightButton>Portfolio</LightButton>
