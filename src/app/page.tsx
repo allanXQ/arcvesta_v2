@@ -44,6 +44,54 @@ const webappfeatures = [
 
 const appfeatures = ["Android", "IOS", "Cross-Platform"];
 
+const complimentaryservices = [
+  {
+    title: "E-commerce Solutions",
+    description:
+      "Create and manage an online store to sell your products and services.",
+  },
+  {
+    title: "Cloud Services",
+    description:
+      "Leverage the power of the cloud for storage, computing, and more.",
+  },
+  {
+    title: "API Development and Integration",
+    description:
+      "Connect your applications and systems for seamless data sharing.",
+  },
+  {
+    title: "Data Management and Analytics",
+    description:
+      "Collect, analyze, and leverage data to make informed business decisions.",
+  },
+  {
+    title: "Third-Party Integrations",
+    description:
+      "Integrate with popular platforms and services to extend your reach.",
+  },
+  {
+    title: "Chatbots and AI",
+    description:
+      "Implement AI-driven chatbots to improve customer service and engagement",
+  },
+  {
+    title: "Maintenance and Support",
+    description:
+      "Ongoing support and maintenance to keep your digital assets running smoothly.",
+  },
+  {
+    title: "Web Hosting",
+    description:
+      "Reliable hosting services to ensure your website is always online.",
+  },
+  {
+    title: "Domain Registration",
+    description:
+      "Register and manage your domain names to establish your online presence.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-w-full gap-20">
@@ -198,6 +246,35 @@ export default function Home() {
               height={650}
               alt="web design"
             />
+          </div>
+
+          <div
+            id="complimentary-services"
+            className="flex flex-col items-center justify-center gap-4"
+          >
+            <h2 className="font-bold text-3xl w-1/2 text-center">
+              We provide a range of additional services to ensure your digital
+              presence is comprehensive and effective
+            </h2>
+            <div className="grid w-full grid-cols-3 place-items-center gap-4">
+              {complimentaryservices.map((feature) => (
+                <div
+                  key={feature.title}
+                  className="flex flex-col w-80 gap-2 items-center"
+                >
+                  <Image
+                    src="/images/icons/cube.png"
+                    alt="check mark"
+                    width={20}
+                    height={20}
+                  />
+                  <div className="flex flex-col gap-1 items-center text-center">
+                    <h3 className="font-bold text-lg">{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
