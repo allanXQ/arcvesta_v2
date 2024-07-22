@@ -2,9 +2,19 @@ import Image from "next/image";
 import "./page.css";
 import fs from "fs";
 
+const DarkButton = ({ children }: { children: React.ReactNode }) => (
+  <button className="w-24 h-10 bg-black text-sm text-white">{children}</button>
+);
+
+const LightButton = ({ children }: { children: React.ReactNode }) => (
+  <button className="w-24 h-10 bg-white text-sm text-black border border-black">
+    {children}
+  </button>
+);
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between min-w-full">
+    <main className="flex flex-col items-center justify-between min-w-full gap-20">
       <div id="header-container" className="min-w-full">
         <nav className="fixed flex justify-between min-w-full px-10 py-3">
           <p>LOGO</p>
@@ -16,7 +26,7 @@ export default function Home() {
             <li>About Us</li>
             <li>Contact</li>
           </ul>
-          <button>Get Started</button>
+          <DarkButton>Contact Us</DarkButton>
         </nav>
         <div
           id="hero"
@@ -35,19 +45,46 @@ export default function Home() {
               tailored to your business needs.
             </p>
             <div className="flex gap-4">
-              <button className="w-24 h-10 bg-black text-sm text-white">
-                Learn More
-              </button>
-              <button>Contact Us</button>
+              <DarkButton>Learn More</DarkButton>
+              <LightButton>Get Started</LightButton>
             </div>
           </div>
         </div>
       </div>
-      <div id="services" className="flex flex-col items-center">
-        <p className="text-xs font-bold">Whatever you need</p>
-        <h2 className="text-3xl font-bold text-center">We have the solution</h2>
+      <div id="services" className="flex flex-col items-center px-10 gap-4">
+        <div id="services-header" className="flex flex-col items-center gap-2">
+          <p className="text-xs font-bold">Whatever you need</p>
+          <h2 className="text-3xl font-bold text-center">
+            We have the solution
+          </h2>
+        </div>
+        <div id="services-container">
+          <div className="flex gap-4 justify-center items-center">
+            <div id="service-text" className="flex flex-col gap-4">
+              <h2 className="font-bold text-2xl">
+                Website Design and Development
+              </h2>
+              <p>
+                We create visually appealing, user-friendly websites that not
+                only reflect your brand's unique identity but also captivate and
+                engage your audience, driving higher levels of interaction and
+                ensuring a memorable online experience for your customers.
+              </p>
+              <div className="flex gap-4">
+                <DarkButton>See Pricing</DarkButton>
+                <LightButton>Learn More</LightButton>
+              </div>
+            </div>
+            <Image
+              src="/images/design1.png"
+              width={500}
+              height={500}
+              alt="web design"
+            />
+          </div>
+        </div>
       </div>
-      <div id="tech-exertise">
+      {/* <div id="tech-exertise">
         <h2 className="text-3xl font-bold text-center">
           Technological Expertise
         </h2>
@@ -69,7 +106,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
