@@ -1,7 +1,5 @@
 import Image from "next/image";
 import "./page.css";
-import fs from "fs";
-import { title } from "process";
 
 const DarkButton = ({ children }: { children: React.ReactNode }) => (
   <button className="w-24 h-10 bg-black text-sm text-white font-medium">
@@ -162,29 +160,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div id="tech-exertise">
+      <div id="cta" className="flex flex-col items-center gap-2">
         <h2 className="text-3xl font-bold text-center">
-          Technological Expertise
+          Ready to take your business to the next level?
         </h2>
         <p className="text-center">
-          Transform your digital vision into reality with our innovative and
-          proficient tech solutions. We bring the future of technology to your
-          fingertips.
+          Contact us today for a free consultation and quote on your project.
         </p>
-        <div id="tech-logos">
-          <div id="tech-logos" className="flex gap-4 flex-wrap">
-            {fs.readdirSync("public/images/techlogos").map((fileName) => (
-              <Image
-                key={fileName}
-                src={`/images/techlogos/${fileName}`}
-                alt={fileName}
-                width={100}
-                height={100}
-              />
-            ))}
-          </div>
+        <div className="flex gap-4">
+          <DarkButton>Contact Us</DarkButton>
+          <LightButton>Learn More</LightButton>
         </div>
-      </div> */}
+      </div>
     </main>
   );
 }
