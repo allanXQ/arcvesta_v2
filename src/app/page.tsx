@@ -1,16 +1,48 @@
 import Image from "next/image";
 import "./page.css";
 import fs from "fs";
+import { title } from "process";
 
 const DarkButton = ({ children }: { children: React.ReactNode }) => (
-  <button className="w-24 h-10 bg-black text-sm text-white">{children}</button>
-);
-
-const LightButton = ({ children }: { children: React.ReactNode }) => (
-  <button className="w-24 h-10 bg-white text-sm text-black border border-black">
+  <button className="w-24 h-10 bg-black text-sm text-white font-medium">
     {children}
   </button>
 );
+
+const LightButton = ({ children }: { children: React.ReactNode }) => (
+  <button className="w-24 h-10 bg-white text-sm text-black border border-black font-medium">
+    {children}
+  </button>
+);
+
+const websitefeatures = [
+  "Responsive",
+  "SEO Optimized",
+  "Custom Design",
+  "Content Management",
+];
+
+const webappfeatures = [
+  {
+    title: "Custom Development",
+    description: "Tailored applications to meet your unique business needs.",
+  },
+  {
+    title: "Scalable",
+    description:
+      "Built to grow with your business and handle increasing traffic.",
+  },
+  {
+    title: "Secure",
+    description:
+      "Implementing the latest security measures to protect against threats.",
+  },
+  {
+    title: "User-friendly",
+    description:
+      "Intuitive and easy-to-use applications for a positive user experience.",
+  },
+];
 
 export default function Home() {
   return (
@@ -51,14 +83,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="services" className="flex flex-col items-center px-10 gap-4">
-        <div id="services-header" className="flex flex-col items-center gap-2">
+      <div id="services" className="flex flex-col items-center px-10 gap">
+        <div id="services-header" className="flex flex-col items-center gap-1">
           <p className="text-xs font-bold">Whatever you need</p>
           <h2 className="text-3xl font-bold text-center">
             We have the solution
           </h2>
         </div>
-        <div id="services-container">
+        <div id="services-container" className="flex flex-col gap-4">
           <div className="flex gap-4 justify-center items-center">
             <div id="service-text" className="flex flex-col gap-4">
               <h2 className="font-bold text-2xl">
@@ -70,40 +102,61 @@ export default function Home() {
                 engage your audience, driving higher levels of interaction and
                 ensuring a memorable online experience for your customers.
               </p>
+              <div className="grid w-full grid-cols-2">
+                {websitefeatures.map((feature) => (
+                  <div key={feature} className="flex gap-4 items-center">
+                    <Image
+                      src="/images/icons/check.jpg"
+                      alt="check mark"
+                      width={20}
+                      height={20}
+                    />
+                    <p>{feature}</p>
+                  </div>
+                ))}
+              </div>
               <div className="flex gap-4">
                 <DarkButton>See Pricing</DarkButton>
-                <LightButton>Learn More</LightButton>
+                <LightButton>Portfolio</LightButton>
               </div>
             </div>
             <Image
               src="/images/design1.png"
-              width={500}
-              height={500}
+              width={650}
+              height={650}
               alt="web design"
             />
           </div>
           <div className="flex flex-row-reverse gap-4 justify-center items-center">
             <div id="service-text" className="flex flex-col gap-4">
               <h2 className="font-bold text-2xl">
-                Mobile Application Design and Development
+                Web Application Development
               </h2>
               <p>
-                We craft high-quality, visually engaging mobile applications
-                tailored for iOS, Android, and cross-platform use. Our apps
-                seamlessly integrate with your brand, delivering an exceptional
-                user experience that captivates and engages your audience,
-                fostering increased interaction and long-lasting customer
-                satisfaction.
+                In contrast to traditional websites, which primarily serve as
+                informational platforms, web applications are interactive,
+                dynamic systems designed to perform specific functions or tasks
+                online. Our web application development services focus on
+                creating robust, scalable, and secure applications that deliver
+                seamless user experiences and drive productivity
               </p>
+              <div className="grid w-full grid-cols-2 gap-4 items-start justify-center">
+                {webappfeatures.map((feature) => (
+                  <div key={feature.title} className="flex flex-col gap-1">
+                    <h3 className="font-bold text-lg">{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                ))}
+              </div>
               <div className="flex gap-4">
                 <DarkButton>See Pricing</DarkButton>
-                <LightButton>Learn More</LightButton>
+                <LightButton>Portfolio</LightButton>
               </div>
             </div>
             <Image
               src="/images/design1.png"
-              width={500}
-              height={500}
+              width={650}
+              height={650}
               alt="web design"
             />
           </div>
