@@ -82,6 +82,31 @@ export default function Home() {
               alt="web design"
             />
           </div>
+          <div className="flex flex-row-reverse gap-4 justify-center items-center">
+            <div id="service-text" className="flex flex-col gap-4">
+              <h2 className="font-bold text-2xl">
+                Mobile Application Design and Development
+              </h2>
+              <p>
+                We craft high-quality, visually engaging mobile applications
+                tailored for iOS, Android, and cross-platform use. Our apps
+                seamlessly integrate with your brand, delivering an exceptional
+                user experience that captivates and engages your audience,
+                fostering increased interaction and long-lasting customer
+                satisfaction.
+              </p>
+              <div className="flex gap-4">
+                <DarkButton>See Pricing</DarkButton>
+                <LightButton>Learn More</LightButton>
+              </div>
+            </div>
+            <Image
+              src="/images/design1.png"
+              width={500}
+              height={500}
+              alt="web design"
+            />
+          </div>
         </div>
       </div>
       {/* <div id="tech-exertise">
