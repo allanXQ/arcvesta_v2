@@ -208,10 +208,10 @@ export default function Home() {
               alt="web design"
             />
           </div>
-          <div className="flex gap-4 justify-center items-center flex-wrap">
+          <div className="flex flex-col-reverse xl:flex-row gap-4 justify-center items-center flex-wrap">
             <div
               id="service-text"
-              className="flex flex-col gap-4 items-center justify-center max-w-xl"
+              className="flex flex-col gap-4 items-start max-w-full xl:max-w-xl"
             >
               <h2 className="font-bold text-2xl text-center">
                 Mobile Application Development
@@ -240,13 +240,13 @@ export default function Home() {
 
           <div
             id="complimentary-services"
-            className="flex flex-col items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4 p-4"
           >
-            <h2 className="font-bold text-3xl w-1/2 text-center">
+            <h2 className="font-bold text-3xl w-full lg:w-1/2 text-center">
               We offer various additional services to create a fully-rounded and
               impactful digital presence.
             </h2>
-            <div className="grid w-full grid-cols-3 place-items-center gap-4">
+            <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
               {complimentaryservices.map((feature) => (
                 <div
                   key={feature.title}
