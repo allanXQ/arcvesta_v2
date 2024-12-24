@@ -23,46 +23,28 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="flex flex-col items-center gap-4">
-      <div className="flex items-center gap-10">
-        <div>
-          <span>Quick Links</span>
-          <ul className="flex flex-col gap-2">
-            {homeLinks.map((link) => (
-              <Link href={link.path} key={link.name}>
-                {link.name}
-              </Link>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <span>Portfolio</span>
-          <ul className="flex flex-col gap-2">
-            {homeLinks.map((link) => (
-              <Link href={link.path} key={link.name}>
-                {link.name}
-              </Link>
+    <footer className="flex flex-col items-center gap-4 w-full px-10">
+      <div className="flex flex-col items-center gap-10 w-full">
+        <div>LOGO</div>
+        <div className="flex flex-col items-center gap-2">
+          <span>Follow Us</span>
+          <ul className="flex gap-4">
+            {socials.map((social) => (
+              <li key={social.name}>
+                <Link href={social.link}>
+                  <Image
+                    src={`/images/logos/${social.name}.png`}
+                    alt={social.name}
+                    width={30}
+                    height={30}
+                  />
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
       </div>
-      <div>
-        <span>Follow Us</span>
-        <ul className="flex gap-2">
-          {socials.map((social) => (
-            <li key={social.name}>
-              <Link href={social.link}>
-                <Image
-                  src={`/images/logos/${social.name}.png`}
-                  alt={social.name}
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+
       <p>© 2024 Company Name. All rights reserved.</p>
     </footer>
   );

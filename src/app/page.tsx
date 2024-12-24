@@ -215,7 +215,7 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-          <div className="flex flex-row-reverse gap-20 justify-center items-center flex-wrap">
+          <div className="flex flex-row gap-20 justify-center items-center flex-wrap">
             <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Mobile Application Development
