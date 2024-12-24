@@ -122,7 +122,7 @@ export default function Home() {
             <p>
               We are a leading web design and development company that
               specializes in creating user-friendly websites and mobile
-              applications. Oue team of experts combines creativity and
+              applications. Our team of experts combines creativity and
               technical expertise to deliver exceptional digital solutions
               tailored to your business needs.
             </p>
