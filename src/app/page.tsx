@@ -1,115 +1,16 @@
 import Image from "next/image";
 import "./page.css";
-import Footer from "./components/footer";
-import { homeLinks } from "./constants";
-import Link from "next/link";
-
-const DarkButton = ({ children }: { children: React.ReactNode }) => (
-  <button className="w-24 h-10 bg-black text-sm text-white font-medium">
-    {children}
-  </button>
-);
-
-const LightButton = ({ children }: { children: React.ReactNode }) => (
-  <button className="w-24 h-10 bg-white text-sm text-black border border-black font-medium">
-    {children}
-  </button>
-);
-
-const websitefeatures = [
-  "Responsive",
-  "SEO Optimized",
-  "Custom Design",
-  "Content Management",
-];
-
-const webappfeatures = [
-  {
-    title: "Custom Development",
-    description: "Tailored applications to meet your unique business needs.",
-  },
-  {
-    title: "Scalable",
-    description:
-      "Built to grow with your business and handle increasing traffic.",
-  },
-  {
-    title: "Secure",
-    description:
-      "Implementing the latest security measures to protect against threats.",
-  },
-  {
-    title: "User-friendly",
-    description:
-      "Intuitive and easy-to-use applications for a positive user experience.",
-  },
-];
-
-const appfeatures = ["Android", "IOS", "Cross-Platform"];
-
-const complimentaryservices = [
-  {
-    title: "E-commerce Solutions",
-    description:
-      "Create and manage an online store to sell your products and services.",
-  },
-  {
-    title: "Cloud Services",
-    description:
-      "Leverage the power of the cloud for storage, computing, and more.",
-  },
-  {
-    title: "API Development and Integration",
-    description:
-      "Connect your applications and systems for seamless data sharing.",
-  },
-  {
-    title: "Data Management and Analytics",
-    description:
-      "Collect, analyze, and leverage data to make informed business decisions.",
-  },
-  {
-    title: "Third-Party Integrations",
-    description:
-      "Integrate with popular platforms and services to extend your reach.",
-  },
-  {
-    title: "Chatbots and AI",
-    description:
-      "Implement AI-driven chatbots to improve customer service and engagement",
-  },
-  {
-    title: "Maintenance and Support",
-    description:
-      "Ongoing support and maintenance to keep your digital assets running smoothly.",
-  },
-  {
-    title: "Web Hosting",
-    description:
-      "Reliable hosting services to ensure your website is always online.",
-  },
-  {
-    title: "Domain Registration",
-    description:
-      "Register and manage your domain names to establish your online presence.",
-  },
-];
+import { DarkButton, LightButton } from "./components/button";
+import {
+  websitefeatures,
+  webappfeatures,
+  complimentaryservices,
+} from "./constants";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-w-full gap-20">
       <div id="header-container" className="min-w-full">
-        <nav className="fixed flex item-center justify-between min-w-full px-10 pt-4 bg-slate-100 bg-opacity-75">
-          <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
-          <ul className="flex gap-10 font-semibold">
-            {homeLinks.map((link) => (
-              <Link key={link.name} href={link.path}>
-                {link.name}
-              </Link>
-            ))}
-          </ul>
-          <DarkButton>Contact Us</DarkButton>
-        </nav>
         <div
           id="hero"
           className="flex items-center justify-center min-w-full min-h-screen "
@@ -286,7 +187,6 @@ export default function Home() {
           <LightButton>Learn More</LightButton>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
