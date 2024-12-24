@@ -139,7 +139,7 @@ export default function Home() {
           </h2>
         </div>
         <div id="services-container" className="flex flex-col gap-16">
-          <div className="flex gap-28 justify-center items-center flex-wrap">
+          <div className="flex gap-20 justify-center items-center flex-wrap">
             <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Website Design and Development
@@ -171,12 +171,14 @@ export default function Home() {
             </div>
             <Image
               src="/images/design1.png"
-              width={650}
-              height={650}
+              width={600}
+              height={600}
               alt="web design"
+              className="w-full max-w-lg mx-auto"
+              layout="responsive"
             />
           </div>
-          <div className="flex flex-row-reverse gap-28 justify-center items-center flex-wrap">
+          <div className="flex flex-row-reverse gap-20 justify-center items-center flex-wrap">
             <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Web Application Development
@@ -204,17 +206,16 @@ export default function Home() {
             </div>
             <Image
               src="/images/design1.png"
-              width={650}
-              height={650}
+              width={600}
+              height={600}
               alt="web design"
+              className="w-full max-w-lg mx-auto"
+              layout="responsive"
             />
           </div>
-          <div className="flex flex-col-reverse xl:flex-row gap-28 justify-center items-center flex-wrap">
-            <div
-              id="service-text"
-              className="flex flex-col gap-4 items-start max-w-full xl:max-w-xl"
-            >
-              <h2 className="font-bold text-2xl text-center">
+          <div className="flex flex-row-reverse gap-20 justify-center items-center flex-wrap">
+            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
+              <h2 className="font-bold text-2xl">
                 Mobile Application Development
               </h2>
               <p className="">
@@ -233,9 +234,11 @@ export default function Home() {
             </div>
             <Image
               src="/images/design1.png"
-              width={650}
-              height={650}
+              width={600}
+              height={600}
               alt="web design"
+              className="w-full max-w-lg mx-auto"
+              layout="responsive"
             />
           </div>
 
