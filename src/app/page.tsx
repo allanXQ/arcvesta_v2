@@ -1,5 +1,8 @@
 import Image from "next/image";
 import "./page.css";
+import Footer from "./components/footer";
+import { homeLinks } from "./constants";
+import Link from "next/link";
 
 const DarkButton = ({ children }: { children: React.ReactNode }) => (
   <button className="w-24 h-10 bg-black text-sm text-white font-medium">
@@ -99,12 +102,11 @@ export default function Home() {
         <nav className="fixed flex item-center justify-between min-w-full px-10 pt-4 bg-slate-100 bg-opacity-75">
           <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
           <ul className="flex gap-10 font-semibold">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Pricing</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            {homeLinks.map((link) => (
+              <Link key={link.name} href={link.path}>
+                {link.name}
+              </Link>
+            ))}
           </ul>
           <DarkButton>Contact Us</DarkButton>
         </nav>
@@ -284,15 +286,7 @@ export default function Home() {
           <LightButton>Learn More</LightButton>
         </div>
       </div>
-      <footer className="flex flex-col items-center gap-4">
-        <p>LOGO</p>
-
-        <div className="flex gap-4">
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
-        </div>
-        <p>© 2024 Company Name. All rights reserved.</p>
-      </footer>
+      <Footer />
     </main>
   );
 }
