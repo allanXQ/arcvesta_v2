@@ -96,9 +96,9 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-w-full gap-20">
       <div id="header-container" className="min-w-full">
-        <nav className="fixed flex justify-between min-w-full px-10 py-3">
-          <p>LOGO</p>
-          <ul className="flex gap-4">
+        <nav className="fixed flex item-center justify-between min-w-full px-10 pt-4 bg-slate-100 bg-opacity-75">
+          <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
+          <ul className="flex gap-10 font-semibold">
             <li>Home</li>
             <li>Services</li>
             <li>Portfolio</li>
@@ -133,22 +133,23 @@ export default function Home() {
       </div>
       <div id="services" className="flex flex-col items-center px-10 gap-10">
         <div id="services-header" className="flex flex-col items-center gap-1">
-          <p className="text-xs font-bold">Whatever you need</p>
+          <p className="text-sm font-bold">Whatever you need</p>
           <h2 className="text-3xl font-bold text-center">
             We have the solution
           </h2>
         </div>
         <div id="services-container" className="flex flex-col gap-16">
-          <div className="flex gap-4 justify-center items-center flex-wrap">
+          <div className="flex gap-28 justify-center items-center flex-wrap">
             <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Website Design and Development
               </h2>
               <p>
                 We create visually appealing, user-friendly websites that not
-                only reflect your brand's unique identity but also captivate and
-                engage your audience, driving higher levels of interaction and
-                ensuring a memorable online experience for your customers.
+                only reflect your brand&apos;s unique identity but also
+                captivate and engage your audience, driving higher levels of
+                interaction and ensuring a memorable online experience for your
+                customers.
               </p>
               <div className="grid w-full grid-cols-2">
                 {websitefeatures.map((feature) => (
@@ -175,7 +176,7 @@ export default function Home() {
               alt="web design"
             />
           </div>
-          <div className="flex flex-row-reverse gap-4 justify-center items-center flex-wrap">
+          <div className="flex flex-row-reverse gap-28 justify-center items-center flex-wrap">
             <div id="service-text" className="flex flex-col gap-4 max-w-xl">
               <h2 className="font-bold text-2xl">
                 Web Application Development
@@ -208,7 +209,7 @@ export default function Home() {
               alt="web design"
             />
           </div>
-          <div className="flex flex-col-reverse xl:flex-row gap-4 justify-center items-center flex-wrap">
+          <div className="flex flex-col-reverse xl:flex-row gap-28 justify-center items-center flex-wrap">
             <div
               id="service-text"
               className="flex flex-col gap-4 items-start max-w-full xl:max-w-xl"
@@ -217,7 +218,7 @@ export default function Home() {
                 Mobile Application Development
               </h2>
               <p className="">
-                In today's fast-paced digital world, having a robust mobile
+                In today&apos;s fast-paced digital world, having a robust mobile
                 presence is crucial for any business. Our mobile app development
                 services are designed to create high-performance, feature-rich
                 applications for iOS, Android, and cross-platform environments.
