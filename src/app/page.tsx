@@ -6,6 +6,7 @@ import {
   webappfeatures,
   complimentaryservices,
 } from "./constants";
+import Testimonials from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -150,8 +151,8 @@ export default function Home() {
             className="flex flex-col items-center justify-center gap-4 p-4"
           >
             <h2 className="font-bold text-3xl w-full lg:w-1/2 text-center">
-              We offer various additional services to create a fully-rounded and
-              impactful digital presence.
+              We offer a suite of additional services to create a fully-rounded
+              and impactful digital presence.
             </h2>
             <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
               {complimentaryservices.map((feature) => (
@@ -174,6 +175,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <Testimonials />
       </div>
       <div id="cta" className="flex flex-col items-center gap-2 max-w-xl">
         <h2 className="text-3xl font-bold text-center text-wrap">
