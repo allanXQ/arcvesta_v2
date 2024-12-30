@@ -12,27 +12,21 @@ import Pricing from "./components/pricing";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-w-full gap-20">
-      <div id="header-container" className="min-w-full">
-        <div
-          id="hero"
-          className="flex items-center justify-center min-w-full min-h-screen "
-        >
-          <div className="flex flex-col items-center p-10 max-w-3xl gap-4">
-            <h1 className="text-4xl text-center font-bold">
-              Transforming businesses through innovative web solutions
-              {/* Modern. user-friendly creative, functional */}
-            </h1>
-            <p>
-              We are a leading web design and development company that
-              specializes in creating user-friendly websites and mobile
-              applications. Our team of experts combines creativity and
-              technical expertise to deliver exceptional digital solutions
-              tailored to your business needs.
-            </p>
-            <div className="flex gap-4">
-              <DarkButton>Learn More</DarkButton>
-              <LightButton>Get Started</LightButton>
-            </div>
+      <div
+        id="hero"
+        className="flex items-center justify-center min-w-full min-h-screen px-4 md:px-10"
+      >
+        <div className="flex flex-col items-center p-6 max-w-xl md:max-w-3xl gap-4 text-center">
+          <h1 className="text-2xl md:text-4xl font-bold">
+            Transforming businesses through innovative web solutions
+          </h1>
+          <p className="text-sm md:text-base">
+            We are a leading web design and development company specializing in
+            user-friendly websites and mobile applications.
+          </p>
+          <div className="flex gap-2 md:gap-4">
+            <DarkButton>Learn More</DarkButton>
+            <LightButton>Get Started</LightButton>
           </div>
         </div>
       </div>
