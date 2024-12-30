@@ -23,20 +23,21 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="flex flex-col items-center gap-4 w-full px-10 mt-10">
-      <div className="flex flex-col items-center gap-10 w-full">
-        <div>LOGO</div>
+    <footer className="flex flex-col items-center gap-4 w-full px-4 md:px-10 mt-10">
+      <div className="flex flex-col items-center gap-6 w-full">
+        <div className="text-center">LOGO</div>
         <div className="flex flex-col items-center gap-2">
-          <span>Follow Us</span>
-          <ul className="flex gap-4">
+          <span className="text-sm md:text-base">Follow Us</span>
+          <ul className="flex gap-2 md:gap-4">
             {socials.map((social) => (
               <li key={social.name}>
                 <Link href={social.link}>
                   <Image
                     src={`/images/logos/${social.name}.png`}
                     alt={social.name}
-                    width={30}
-                    height={30}
+                    width={20}
+                    height={20}
+                    className="w-5 md:w-8"
                   />
                 </Link>
               </li>
@@ -44,8 +45,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-
-      <p>© 2024 Company Name. All rights reserved.</p>
+      <p className="text-xs md:text-sm">
+        © 2024 Company Name. All rights reserved.
+      </p>
     </footer>
   );
 };
