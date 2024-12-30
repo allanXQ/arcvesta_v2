@@ -7,6 +7,7 @@ import {
   complimentaryservices,
 } from "./constants";
 import Testimonials from "./components/testimonials";
+import Pricing from "./components/pricing";
 
 export default function Home() {
   return (
@@ -176,9 +177,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <Testimonials />
-      </div>
+      <Pricing />
+      <Testimonials />
+      https://bambulab.com/en/a1-mini get fonts
       <div id="cta" className="flex flex-col items-center gap-2 max-w-xl">
         <h2 className="text-3xl font-bold text-center text-wrap">
           Ready to take your business to the next level?
