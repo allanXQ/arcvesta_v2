@@ -8,6 +8,7 @@ import {
 } from "./constants";
 import Testimonials from "./components/testimonials";
 import Pricing from "./components/pricing";
+import Services from "./components/services";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="services" className="flex flex-col items-center px-10 gap-10">
+      <div id="services" className="flex flex-col items-center px-5 gap-10">
         <div id="services-header" className="flex flex-col items-center gap-1">
           <p className="text-sm font-bold">Whatever you need</p>
           <h2 className="text-3xl font-bold text-center">
@@ -38,112 +39,10 @@ export default function Home() {
           </h2>
         </div>
         <div id="services-container" className="flex flex-col gap-16">
-          <div className="flex gap-20 justify-center items-center flex-wrap">
-            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
-              <h2 className="font-bold text-2xl">
-                Website Design and Development
-              </h2>
-              <p>
-                We create visually appealing, user-friendly websites that not
-                only reflect your brand&apos;s unique identity but also
-                captivate and engage your audience, driving higher levels of
-                interaction and ensuring a memorable online experience for your
-                customers.
-              </p>
-              <div className="grid w-full grid-cols-2">
-                {websitefeatures.map((feature) => (
-                  <div key={feature} className="flex gap-4 items-center">
-                    <Image
-                      src="/images/icons/check.jpg"
-                      alt="check mark"
-                      width={20}
-                      height={20}
-                    />
-                    <p>{feature}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="flex gap-4">
-                <DarkButton>See Pricing</DarkButton>
-                <LightButton>Portfolio</LightButton>
-              </div>
-            </div>
-            <Image
-              src="/images/design1.png"
-              width={600}
-              height={600}
-              alt="web design"
-              className="w-full max-w-lg mx-auto"
-              layout="responsive"
-            />
-          </div>
-          <div className="flex flex-row-reverse gap-20 justify-center items-center flex-wrap">
-            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
-              <h2 className="font-bold text-2xl">
-                Web Application Development
-              </h2>
-              <p>
-                In contrast to traditional websites, which primarily serve as
-                informational platforms, web applications are interactive,
-                dynamic systems designed to perform specific functions or tasks
-                online. Our web application development services focus on
-                creating robust, scalable, and secure applications that deliver
-                seamless user experiences and drive productivity
-              </p>
-              <div className="grid w-full grid-cols-2 gap-4 items-start justify-center">
-                {webappfeatures.map((feature) => (
-                  <div key={feature.title} className="flex flex-col gap-1">
-                    <h3 className="font-bold text-lg">{feature.title}</h3>
-                    <p>{feature.description}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="flex gap-4">
-                <DarkButton>See Pricing</DarkButton>
-                <LightButton>Portfolio</LightButton>
-              </div>
-            </div>
-            <Image
-              src="/images/design1.png"
-              width={600}
-              height={600}
-              alt="web design"
-              className="w-full max-w-lg mx-auto"
-              layout="responsive"
-            />
-          </div>
-          <div className="flex flex-row gap-20 justify-center items-center flex-wrap">
-            <div id="service-text" className="flex flex-col gap-4 max-w-xl">
-              <h2 className="font-bold text-2xl">
-                Mobile Application Development
-              </h2>
-              <p className="">
-                In today&apos;s fast-paced digital world, having a robust mobile
-                presence is crucial for any business. Our mobile app development
-                services are designed to create high-performance, feature-rich
-                applications for iOS, Android, and cross-platform environments.
-                We combine cutting-edge technology with creative design to
-                deliver apps that not only align with your brand’s identity but
-                also provide an engaging and seamless user experience.
-              </p>
-              <div className="flex gap-4">
-                <DarkButton>See Pricing</DarkButton>
-                <LightButton>Portfolio</LightButton>
-              </div>
-            </div>
-            <Image
-              src="/images/design1.png"
-              width={600}
-              height={600}
-              alt="web design"
-              className="w-full max-w-lg mx-auto"
-              layout="responsive"
-            />
-          </div>
-
+          <Services />
           <div
             id="complimentary-services"
-            className="flex flex-col items-center justify-center gap-4 p-4"
+            className="flex flex-col items-center justify-center gap-4"
           >
             <h2 className="font-bold text-3xl w-full lg:w-1/2 text-center">
               We offer a suite of additional services to create a fully-rounded
@@ -153,7 +52,7 @@ export default function Home() {
               {complimentaryservices.map((feature) => (
                 <div
                   key={feature.title}
-                  className="flex flex-col w-80 gap-2 items-center"
+                  className="flex flex-col gap-2 items-center"
                 >
                   <Image
                     src="/images/icons/cube.png"
