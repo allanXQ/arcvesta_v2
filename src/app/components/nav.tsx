@@ -14,7 +14,6 @@ const Topbar = () => {
 
   return (
     <>
-      {/* Topbar */}
       <nav className="fixed flex items-center justify-between w-full px-6 md:px-10 py-4 bg-slate-100 bg-opacity-75 z-50">
         <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
         <ul className="hidden md:flex gap-10 font-semibold">
@@ -27,7 +26,6 @@ const Topbar = () => {
         <div className="hidden md:block">
           <DarkButton>Contact Us</DarkButton>
         </div>
-        {/* Menu Button for Small Screens */}
         <button
           className="md:hidden text-red-600 text-2xl"
           onClick={toggleSidebar}
@@ -36,7 +34,6 @@ const Topbar = () => {
         </button>
       </nav>
 
-      {/* Sidebar */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
@@ -62,7 +59,6 @@ const Topbar = () => {
         </div>
       </div>
 
-      {/* Backdrop for Sidebar */}
       {isSidebarOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30"
