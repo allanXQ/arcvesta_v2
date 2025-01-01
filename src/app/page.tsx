@@ -5,10 +5,11 @@ import { complimentaryservices } from "./constants";
 import Testimonials from "./components/testimonials";
 import Pricing from "./components/pricing";
 import Services from "./components/services";
+import HeaderSection from "./components/headerSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between min-w-full gap-32">
+    <main className="flex flex-col items-center justify-between min-w-full gap-28">
       <div
         id="hero"
         className="flex items-center justify-center min-w-full min-h-screen px-4 md:px-10"
@@ -28,22 +29,21 @@ export default function Home() {
         </div>
       </div>
       <div id="services" className="flex flex-col items-center px-5 gap-10">
-        <div id="services-header" className="flex flex-col items-center gap-1">
-          <p className="text-sm font-bold">Whatever you need</p>
-          <h2 className="text-3xl font-bold text-center">
-            We have the solution
-          </h2>
-        </div>
-        <div id="services-container" className="flex flex-col gap-32">
+        <HeaderSection
+          subTitle="Our Services"
+          title="We offer a range of services to help grow your business."
+        />
+        <div id="services-container" className="flex flex-col gap-28">
           <Services />
           <div
             id="complimentary-services"
             className="flex flex-col items-center justify-center gap-4"
           >
-            <h2 className="font-bold text-3xl w-full lg:w-1/2 text-center">
-              We offer a suite of additional services to create a fully-rounded
-              and impactful digital presence.
-            </h2>
+            <HeaderSection
+              subTitle="Complimentary Services"
+              title="Our suite of complimentary services will create a fully-rounded
+              and impactful digital presence."
+            />
             <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">
               {complimentaryservices.map((feature) => (
                 <div
@@ -67,13 +67,11 @@ export default function Home() {
         </div>
       </div>
       <Testimonials />
-      <div id="cta" className="flex flex-col items-center gap-2 max-w-xl">
-        <h2 className="text-3xl font-bold text-center text-wrap">
-          Ready to take your business to the next level?
-        </h2>
-        <p className="text-center text-wrap">
-          Contact us today for a free consultation and quote on your project.
-        </p>
+      <div id="cta" className="flex flex-col items-center gap-1 max-w-xl">
+        <HeaderSection
+          subTitle="Ready to take your business to the next level?"
+          title="Contact us today for a free consultation and quote on your project."
+        />
         <div className="flex gap-4">
           <DarkButton>Contact Us</DarkButton>
           <LightButton>Learn More</LightButton>

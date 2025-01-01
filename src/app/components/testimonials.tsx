@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import HeaderSection from "./headerSection";
 
 interface TestimonialCardProps {
   imageSrc: string;
@@ -79,15 +80,10 @@ const Testimonials = () => {
       id="testimonials"
       className="flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-10 bg-white"
     >
-      <div className="text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-          What Our Clients Say
-        </h2>
-        <p className="text-sm sm:text-base text-gray-700">
-          Hear from businesses we’ve helped transform with our innovative
-          solutions.
-        </p>
-      </div>
+      <HeaderSection
+        subTitle="What Our Clients Say"
+        title="Hear from businesses we’ve helped transform with our innovative solutions."
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
         {testimonials.map((testimonial, index) => (
