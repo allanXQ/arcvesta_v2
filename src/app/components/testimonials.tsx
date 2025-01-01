@@ -78,7 +78,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-10 bg-white"
+      className="flex flex-col items-center gap-10 bg-white"
     >
       <HeaderSection
         subTitle="What Our Clients Say"

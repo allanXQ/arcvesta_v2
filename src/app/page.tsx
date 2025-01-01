@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="services" className="flex flex-col items-center px-5 gap-10">
+      <div id="services" className="flex flex-col items-center px-10 gap-10">
         <HeaderSection
           subTitle="Our Services"
           title="We offer a range of services to help grow your business."
@@ -65,13 +65,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Testimonials />
-      <div id="cta" className="flex flex-col items-center gap-1 max-w-xl">
+      <div className="flex flex-col items-center px-10 gap-10">
+        <Testimonials />
+      </div>
+      <div id="cta" className="flex flex-col items-center max-w-xl">
         <HeaderSection
           subTitle="Ready to take your business to the next level?"
           title="Contact us today for a free consultation and quote on your project."
         />
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-4">
           <DarkButton>Contact Us</DarkButton>
           <LightButton>Learn More</LightButton>
         </div>
