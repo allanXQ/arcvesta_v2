@@ -3,7 +3,6 @@ import "./page.css";
 import { DarkButton, LightButton } from "./components/button";
 import { complimentaryservices } from "./constants";
 import Testimonials from "./components/testimonials";
-import Pricing from "./components/pricing";
 import Services from "./components/services";
 import HeaderSection from "./components/headerSection";
 

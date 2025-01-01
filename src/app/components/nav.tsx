@@ -15,7 +15,7 @@ const Topbar = () => {
   return (
     <>
       <nav className="fixed flex items-center justify-between w-full h-14 px-6 py-4 bg-white">
-        <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
+        <span className="font-extrabold text-2xl">VESTA</span>
         <ul className="hidden md:flex gap-10">
           {homeLinks.map((link) => (
             <Link key={link.name} href={link.path}>
@@ -29,10 +29,7 @@ const Topbar = () => {
         >
           Contact Us
         </Link>
-        <button
-          className="md:hidden text-red-600 text-2xl"
-          onClick={toggleSidebar}
-        >
+        <button className="md:hidden text-2xl" onClick={toggleSidebar}>
           {isSidebarOpen ? <FiX /> : <FiMenu />}
         </button>
       </nav>
@@ -43,8 +40,8 @@ const Topbar = () => {
         } transition-transform duration-300 ease-in-out z-40`}
       >
         <div className="flex items-center justify-between px-6 py-4 border-b">
-          <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
-          <button className="text-red-600 text-2xl" onClick={toggleSidebar}>
+          <span className="font-extrabold text-2xl">VESTA</span>
+          <button className="text-2xl" onClick={toggleSidebar}>
             <FiX />
           </button>
         </div>
