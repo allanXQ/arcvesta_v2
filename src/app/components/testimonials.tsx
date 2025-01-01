@@ -77,7 +77,7 @@ const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-10 py-16 bg-white"
+      className="flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-10 bg-white"
     >
       <div className="text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">

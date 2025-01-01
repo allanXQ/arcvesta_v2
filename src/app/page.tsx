@@ -8,7 +8,7 @@ import Services from "./components/services";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between min-w-full gap-20">
+    <main className="flex flex-col items-center justify-between min-w-full gap-32">
       <div
         id="hero"
         className="flex items-center justify-center min-w-full min-h-screen px-4 md:px-10"
@@ -34,7 +34,7 @@ export default function Home() {
             We have the solution
           </h2>
         </div>
-        <div id="services-container" className="flex flex-col gap-16">
+        <div id="services-container" className="flex flex-col gap-32">
           <Services />
           <div
             id="complimentary-services"
@@ -66,9 +66,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Pricing />
       <Testimonials />
-      https://bambulab.com/en/a1-mini get fonts
       <div id="cta" className="flex flex-col items-center gap-2 max-w-xl">
         <h2 className="text-3xl font-bold text-center text-wrap">
           Ready to take your business to the next level?

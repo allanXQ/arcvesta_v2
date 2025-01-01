@@ -23,7 +23,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="flex flex-col items-center gap-4 w-full px-4 md:px-10 mt-10">
+    <footer className="flex flex-col items-center gap-4 w-full px-4 md:px-10 mt-32">
       <div className="flex flex-col items-center gap-6 w-full">
         <div className="text-center">LOGO</div>
         <div className="flex flex-col items-center gap-2">
