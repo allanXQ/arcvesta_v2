@@ -1,11 +1,7 @@
 import Image from "next/image";
 import "./page.css";
 import { DarkButton, LightButton } from "./components/button";
-import {
-  websitefeatures,
-  webappfeatures,
-  complimentaryservices,
-} from "./constants";
+import { complimentaryservices } from "./constants";
 import Testimonials from "./components/testimonials";
 import Pricing from "./components/pricing";
 import Services from "./components/services";
@@ -18,10 +14,10 @@ export default function Home() {
         className="flex items-center justify-center min-w-full min-h-screen px-4 md:px-10"
       >
         <div className="flex flex-col items-center p-6 max-w-xl md:max-w-3xl gap-4 text-center">
-          <h1 className="text-2xl md:text-4xl font-bold">
+          <h1 className="text-2xl md:text-4xl font-semibold">
             Transforming businesses through innovative web solutions
           </h1>
-          <p className="text-sm md:text-base">
+          <p className="">
             We are a leading web design and development company specializing in
             user-friendly websites and mobile applications.
           </p>

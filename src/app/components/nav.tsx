@@ -14,7 +14,7 @@ const Topbar = () => {
 
   return (
     <>
-      <nav className="fixed flex items-center justify-between w-full px-6 md:px-10 py-4 bg-slate-100 bg-opacity-75 z-50">
+      <nav className="fixed flex items-center justify-between w-full h-14 px-6 py-4 bg-white">
         <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
         <ul className="hidden md:flex gap-10 font-semibold">
           {homeLinks.map((link) => (

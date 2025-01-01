@@ -97,12 +97,24 @@ const Services = () => {
         "In contrast to traditional websites, which primarily serve as informational platforms, web applications are interactive, dynamic systems designed to perform specific functions or tasks online. Our web application development services focus on creating robust, scalable, and secure applications that deliver seamless user experiences and drive productivity.",
       features: [
         {
+          title: "Custom Development",
+          description:
+            "Tailored applications to meet your unique business needs.",
+        },
+        {
           title: "Scalable",
-          description: "Easily handle growing user demands.",
+          description:
+            "Built to grow with your business and handle increasing traffic.",
         },
         {
           title: "Secure",
-          description: "Robust security for data protection.",
+          description:
+            "Implementing the latest security measures to protect against threats.",
+        },
+        {
+          title: "User-friendly",
+          description:
+            "Intuitive and easy-to-use applications for a positive user experience.",
         },
       ],
       featureType: "details",
