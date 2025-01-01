@@ -16,16 +16,19 @@ const Topbar = () => {
     <>
       <nav className="fixed flex items-center justify-between w-full h-14 px-6 py-4 bg-white">
         <span className="text-red-600 font-extrabold text-2xl">VESTA</span>
-        <ul className="hidden md:flex gap-10 font-semibold">
+        <ul className="hidden md:flex gap-10">
           {homeLinks.map((link) => (
             <Link key={link.name} href={link.path}>
               {link.name}
             </Link>
           ))}
         </ul>
-        <div className="hidden md:block">
-          <DarkButton>Contact Us</DarkButton>
-        </div>
+        <Link
+          href="contact"
+          className="hidden md:flex items-center justify-center w-24 h-10 bg-black text-sm text-white font-medium"
+        >
+          Contact Us
+        </Link>
         <button
           className="md:hidden text-red-600 text-2xl"
           onClick={toggleSidebar}
@@ -45,7 +48,7 @@ const Topbar = () => {
             <FiX />
           </button>
         </div>
-        <ul className="flex flex-col gap-4 mt-6 px-6 font-semibold">
+        <ul className="flex flex-col gap-4 mt-6 px-6">
           {homeLinks.map((link) => (
             <Link key={link.name} href={link.path} onClick={toggleSidebar}>
               <li className="cursor-pointer hover:text-red-600 transition">

@@ -19,10 +19,6 @@ const homeLinks = [
     name: "About Us",
     path: "/about",
   },
-  {
-    name: "Contact",
-    path: "/contact",
-  },
 ];
 
 const websitefeatures = [
