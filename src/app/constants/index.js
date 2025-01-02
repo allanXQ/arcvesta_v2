@@ -100,10 +100,50 @@ const complimentaryservices = [
   },
 ];
 
+const projects = [
+  {
+    title: "E-Commerce Website",
+    description:
+      "A fully responsive e-commerce platform with integrated payment gateway and advanced search functionality.",
+    imageSrc: "/images/projects/download.jpeg",
+    technologies: ["React", "Next.js", "Tailwind CSS", "Stripe"],
+    tag: "website",
+    url: "https://example.com/ecommerce-website",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A sleek and modern portfolio website designed to showcase personal projects and achievements.",
+    imageSrc: "/images/projects/download.jpeg",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    tag: "website",
+    url: "https://example.com/portfolio-website",
+  },
+  {
+    title: "Mobile App",
+    description:
+      "A cross-platform mobile app with real-time notifications and offline capabilities.",
+    imageSrc: "/images/projects/download.jpeg",
+    technologies: ["React Native", "Expo", "Firebase"],
+    tag: "mobileapp",
+    url: "https://example.com/mobile-app",
+  },
+  {
+    title: "Web Application",
+    description:
+      "An interactive web application for managing tasks and collaborating with team members in real-time.",
+    imageSrc: "/images/projects/download.jpeg",
+    technologies: ["Vue.js", "Node.js", "MongoDB"],
+    tag: "webapp",
+    url: "https://example.com/web-application",
+  },
+];
+
 export {
   homeLinks,
   websitefeatures,
   webappfeatures,
   appfeatures,
   complimentaryservices,
+  projects,
 };

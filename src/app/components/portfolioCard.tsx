@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { FiExternalLink } from "react-icons/fi"; // Import an external link icon
 
 interface PortfolioCardProps {
   title: string;
   description: string;
   imageSrc: string;
   technologies: string[];
+  url: string;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
@@ -13,9 +15,10 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   description,
   imageSrc,
   technologies,
+  url,
 }) => {
   return (
-    <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden relative">
       {/* Project Image */}
       <div className="relative w-full h-48">
         <Image
@@ -42,6 +45,19 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           ))}
         </div>
       </div>
+
+      {/* External Link Icon */}
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition"
+          aria-label={`Visit ${title}`}
+        >
+          <FiExternalLink className="text-gray-800 w-5 h-5" />
+        </a>
+      )}
     </div>
   );
 };
