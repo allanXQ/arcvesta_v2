@@ -1,7 +1,7 @@
 const homeLinks = [
   {
     name: "Home",
-    path: "/home",
+    path: "/",
   },
   {
     name: "Services",

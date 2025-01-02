@@ -14,7 +14,7 @@ const Topbar = () => {
 
   return (
     <>
-      <nav className="fixed flex items-center justify-between w-full h-14 px-6 py-4 bg-white">
+      <nav className="fixed flex items-center justify-between w-full h-14 px-6 py-4 bg-white z-50">
         <span className="font-extrabold text-2xl">VESTA</span>
         <ul className="hidden md:flex gap-10">
           {homeLinks.map((link) => (
