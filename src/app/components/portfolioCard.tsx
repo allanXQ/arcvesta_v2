@@ -7,7 +7,7 @@ interface PortfolioCardProps {
   description: string;
   imageSrc: string;
   technologies: string[];
-  url: string;
+  url?: string;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
