@@ -47,7 +47,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   company,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-6 p-6 bg-white shadow-md rounded-lg border border-gray-200 h-[60vh]">
+    <div className="flex flex-col items-center justify-center gap-4 p-4 bg-white shadow-md rounded-lg border border-gray-200 h-[60vh]">
       {/* Profile Image */}
       <Image
         src={imageSrc}
