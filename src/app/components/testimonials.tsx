@@ -13,7 +13,7 @@ interface TestimonialCardProps {
 
 const testimonials = [
   {
-    imageSrc: "/images/testimonials/user1.jpg",
+    imageSrc: "/images/testimonials/person.jpeg",
     title: "Exceptional Website",
     text: "Vesta transformed our online presence with an exceptional website. The team was professional, responsive, and a pleasure to work with.",
     name: "John Doe",
@@ -21,7 +21,7 @@ const testimonials = [
     company: "TechCorp",
   },
   {
-    imageSrc: "/images/testimonials/user2.jpg",
+    imageSrc: "/images/testimonials/person.jpeg",
     title: "Exceeded Expectations",
     text: "Their web application development services exceeded our expectations. Our productivity has increased significantly since implementing their solution.",
     name: "Jane Smith",
@@ -29,7 +29,7 @@ const testimonials = [
     company: "Innovate Inc.",
   },
   {
-    imageSrc: "/images/testimonials/user3.jpg",
+    imageSrc: "/images/testimonials/person.jpeg",
     title: "Stunning Mobile App",
     text: "The Vesta team created a stunning mobile app for us. It’s user-friendly and perfectly aligned with our brand vision. Highly recommend!",
     name: "Samuel Green",
@@ -47,14 +47,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   company,
 }) => {
   return (
-    <div className="flex flex-col items-center gap-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+    <div className="flex flex-col items-center justify-center gap-6 p-6 bg-white shadow-md rounded-lg border border-gray-200 h-[60vh]">
       {/* Profile Image */}
       <Image
         src={imageSrc}
         alt={name}
-        width={80}
-        height={80}
-        className="rounded-full border-4 border-green-500"
+        width={120}
+        height={120}
+        className="rounded-full border-2"
       />
 
       {/* Title */}

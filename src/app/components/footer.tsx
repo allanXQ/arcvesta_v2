@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center gap-4 w-full px-4 md:px-10 mt-32">
       <div className="flex flex-col items-center gap-6 w-full">
-        <div className="text-center">LOGO</div>
+        <span className="font-extrabold text-2xl">VESTA</span>
         <div className="flex flex-col items-center gap-2">
           <span className="text-sm md:text-base">Follow Us</span>
           <ul className="flex gap-2 md:gap-4">
@@ -45,8 +45,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <p className="text-xs md:text-sm">
-        © 2024 Company Name. All rights reserved.
+      <p className="text-sm md:text-base text-center">
+        © {new Date().getFullYear()} Vesta Systems. All rights reserved.
       </p>
     </footer>
   );
