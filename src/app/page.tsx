@@ -15,7 +15,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center p-6 max-w-xl md:max-w-3xl gap-4 text-center">
           <h1 className="text-2xl md:text-4xl font-semibold">
-            Transforming businesses through innovative web solutions
+            Transforming businesses through innovative solutions
           </h1>
           <p className="">
             We are a leading web design and development company specializing in
