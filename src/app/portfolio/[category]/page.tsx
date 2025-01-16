@@ -1,5 +1,5 @@
 "use client";
-import PortfolioSection from "@/app/components/portfolioSection";
+import PortfolioSection from "@/app/components/portfolio/portfolioSection";
 import { projects } from "@/app/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 import Link from "next/link";
-import PortfolioSection from "../components/portfolioSection";
+import PortfolioSection from "../components/portfolio/portfolioSection";
 import { projects } from "../constants";
 
 const PortfolioPage = () => {

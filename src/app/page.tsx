@@ -5,6 +5,7 @@ import { complimentaryservices } from "./constants";
 import Testimonials from "./components/testimonials";
 import Services from "./components/services";
 import HeaderSection from "./components/headerSection";
+import Pricing from "./components/pricing/pricing";
 
 export default function Home() {
   return (
@@ -67,6 +68,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center px-10 gap-10">
         <Testimonials />
+      </div>
+      <div className="flex flex-col items-center px-10 gap-10">
+        <Pricing />
       </div>
       <div id="cta" className="flex flex-col items-center max-w-xl">
         <HeaderSection
