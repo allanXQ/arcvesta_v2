@@ -1,11 +1,45 @@
 import Image from "next/image";
 import React from "react";
 
+const plans = [
+  {
+    name: "Website",
+    price: "$99",
+    features: [
+      "1 Website",
+      "Max 5 Pages",
+      "Basic SEO",
+      "Custom Design",
+      "Standard Hosting",
+    ],
+  },
+  {
+    name: "Pro Plan",
+    price: "$199",
+    features: [
+      "5 Websites",
+      "Advanced SEO",
+      "Priority Support",
+      "50 GB Hosting",
+    ],
+  },
+  {
+    name: "Enterprise Plan",
+    price: "Custom",
+    features: [
+      "Unlimited Websites",
+      "Dedicated Support",
+      "Custom Features",
+      "Unlimited Hosting",
+    ],
+  },
+]
+
 const Pricing = () => {
   return (
     <div
       id="pricing"
-      className="flex flex-col items-center gap-10 px-4 sm:px-6 lg:px-10 py-16 bg-gray-100"
+      className="flex flex-col items-center justify-evenly gap-10"
     >
       <div className="text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
@@ -17,42 +51,11 @@ const Pricing = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
-        {[
-          {
-            name: "Basic Plan",
-            price: "$99",
-            features: [
-              "1 Website",
-              "Basic SEO",
-              "Email Support",
-              "10 GB Hosting",
-            ],
-          },
-          {
-            name: "Pro Plan",
-            price: "$199",
-            features: [
-              "5 Websites",
-              "Advanced SEO",
-              "Priority Support",
-              "50 GB Hosting",
-            ],
-          },
-          {
-            name: "Enterprise Plan",
-            price: "Custom",
-            features: [
-              "Unlimited Websites",
-              "Dedicated Support",
-              "Custom Features",
-              "Unlimited Hosting",
-            ],
-          },
-        ].map((plan) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
+        {plans.map((plan) => (
           <div
             key={plan.name}
-            className="flex flex-col items-center gap-4 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+            className="flex flex-col items-center justify-between bg-white p-6 shadow-lg rounded-lg w-[20vw] h-[80vh]"
           >
             <h3 className="text-xl font-bold">{plan.name}</h3>
             <p className="text-4xl font-extrabold text-gray-800">

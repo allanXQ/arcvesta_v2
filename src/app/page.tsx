@@ -69,7 +69,7 @@ export default function Home() {
       <div className="flex flex-col items-center px-10 gap-10">
         <Testimonials />
       </div>
-      <div className="flex flex-col items-center px-10 gap-10">
+      <div className="flex flex-col items-center">
         <Pricing />
       </div>
       <div id="cta" className="flex flex-col items-center max-w-xl">
