@@ -88,7 +88,7 @@ const Services = () => {
         "Content Management",
       ],
       featureType: "list",
-      imageSrc: "/images/design1.png",
+      imageSrc: "/images/services/webdesign.png",
       reverse: false,
     },
     {
@@ -118,7 +118,7 @@ const Services = () => {
         },
       ],
       featureType: "details",
-      imageSrc: "/images/design1.png",
+      imageSrc: "/images/services/webdesign.png",
       reverse: true,
     },
     {
@@ -127,7 +127,7 @@ const Services = () => {
         "In today’s fast-paced digital world, having a robust mobile presence is crucial for any business. Our mobile app development services are designed to create high-performance, feature-rich applications for iOS, Android, and cross-platform environments. We combine cutting-edge technology with creative design to deliver apps that align with your brand’s identity while providing an engaging and seamless user experience.",
       features: null,
       featureType: null,
-      imageSrc: "/images/design1.png",
+      imageSrc: "/images/services/webdesign.png",
       reverse: false,
     },
   ];
