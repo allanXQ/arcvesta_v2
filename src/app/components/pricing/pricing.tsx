@@ -17,6 +17,7 @@ const plans = [
       "Max 10 Pages",
       "Max 5 revisions",
       "Dedicated Support",
+      "1-Month Maintenance and Updates",
     ],
   },
   {
@@ -31,7 +32,7 @@ const plans = [
       "Custom Forms and Interactive Features",
       "API Integration (Payment Gateway etc.)",
       "E-commerce Solutions",
-      "3-Month Maintenance and Updates",
+      "1-Month Maintenance and Updates",
     ],
   },
   {
@@ -46,7 +47,7 @@ const plans = [
       "Performance Optimization for App Stores",
       "E-commerce Solutions",
       "Dedicated Support",
-      "Custom Features Tailored to Your Business",
+      "1-Month Maintenance and Updates",
     ],
   },
 ];
@@ -63,7 +64,7 @@ const Pricing = () => {
           Pricing Plans
         </h2>
         <p className="text-sm sm:text-base text-gray-700">
-          Choose the perfect plan for your business needs. Flexible pricing with
+          Choose the perfect service for your business needs. Flexible pricing with
           no hidden costs.
         </p>
       </div>

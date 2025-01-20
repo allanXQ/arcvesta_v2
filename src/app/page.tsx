@@ -6,6 +6,7 @@ import Testimonials from "./components/testimonials";
 import Services from "./components/services";
 import HeaderSection from "./components/headerSection";
 import Pricing from "./components/pricing/pricing";
+import ContactForm from "./components/contactform";
 
 export default function Home() {
   return (
@@ -77,9 +78,8 @@ export default function Home() {
           subTitle="Ready to take your business to the next level?"
           title="Contact us today for a free consultation and quote on your project."
         />
-        <div className="flex gap-4 mt-4">
-          <DarkButton>Contact Us</DarkButton>
-          <LightButton>Learn More</LightButton>
+        <div className="flex items-center justify-center w-[100vw]">
+          <ContactForm />
         </div>
       </div>
     </main>
