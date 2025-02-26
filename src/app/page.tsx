@@ -41,8 +41,8 @@ export default function Home() {
             className="flex flex-col items-center justify-center gap-4"
           >
             <HeaderSection
-              subTitle="Complimentary Services"
-              title="Our suite of complimentary services will create a fully-rounded
+              subTitle="Other Services"
+              title="Our suite of services will create a fully-rounded
               and impactful digital presence."
             />
             <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-4">

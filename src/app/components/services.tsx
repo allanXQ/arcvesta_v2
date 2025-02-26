@@ -69,7 +69,6 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
         height={600}
         alt={title}
         className="w-full max-w-lg mx-auto"
-        layout="responsive"
       />
     </div>
   );

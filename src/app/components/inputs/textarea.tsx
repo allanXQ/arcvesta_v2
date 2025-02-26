@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 interface TextAreaProps {
   label: string;
@@ -6,25 +6,28 @@ interface TextAreaProps {
   required: boolean;
 }
 
-const TextArea: React.FC<TextAreaProps> = ({label, placeholder, required}) => {
+const TextArea: React.FC<TextAreaProps> = ({
+  label,
+  placeholder,
+  required,
+}) => {
   return (
     <div className="flex flex-col gap-2">
-        <div className='flex items-center gap-2'>
+      <div className="flex items-center gap-2">
         <label htmlFor="name">{label}</label>
-        {
-            required && <span className='text-red-500'>*</span>
-        }
-        </div>
-        <textarea
+        {required && <span className="text-red-500">*</span>}
+      </div>
+      <textarea
         id="name"
         name="name"
         placeholder={placeholder}
         required={required}
-        className='border border-gray-300 rounded-md p-2 w-96'
-        rows={4} cols={50}
-        />
+        className="border border-gray-300 rounded-md p-2 w-96"
+        rows={4}
+        cols={50}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default TextArea
+export default TextArea;
