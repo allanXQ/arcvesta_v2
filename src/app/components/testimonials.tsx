@@ -49,13 +49,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-4 bg-white shadow-md rounded-lg border border-gray-200 h-[60vh]">
       {/* Profile Image */}
-      <Image
-        src={imageSrc}
-        alt={name}
-        width={120}
-        height={120}
-        className="rounded-full border-2"
-      />
+      <div className="w-32 h-32 rounded-full overflow-hidden border-2">
+        <Image
+          src={imageSrc}
+          alt={name}
+          width={120}
+          height={120}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       {/* Title */}
       <h3 className="text-lg font-bold text-gray-800">{title}</h3>
