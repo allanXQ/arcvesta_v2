@@ -29,12 +29,12 @@ const model = [
     placeholder: "",
     options: ["Website", "Web Application", "Mobile Application"],
   },
-  {
-    name: "Message",
-    type: "textarea",
-    placeholder: "Your message here (optional)",
-    required: false,
-  },
+  // {
+  //   name: "Message",
+  //   type: "textarea",
+  //   placeholder: "Your message here (optional)",
+  //   required: false,
+  // },
 ];
 
 interface Field {
@@ -88,18 +88,19 @@ const renderField = (field: Field | SelectField) => {
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-center items-center p-5">
-      <form className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl bg-white p-6 rounded-lg shadow-lg">
+    <div className="flex justify-center items-center p-5 flex-col">
+      <form className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 w-full rounded-lg">
         {model.map((field) => renderField(field))}
-        <div className="col-span-1 md:col-span-2 flex justify-center">
-          <button
-            type="submit"
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition w-full md:w-auto"
-          >
-            Submit
-          </button>
-        </div>
+        {/* <div className="flex w-[inherit] items-center"> */}
+
+        {/* </div> */}
       </form>
+      <button
+        type="submit"
+        className="w-1/2 px-6 py-3 mt-5 bg-black font-semi text-white rounded-lg hover:bg-white hover:text-black hover:border-2 border-black transition"
+      >
+        Submit
+      </button>
     </div>
   );
 };

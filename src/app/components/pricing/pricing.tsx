@@ -56,7 +56,7 @@ const Pricing = () => {
   return (
     <div
       id="pricing"
-      className="flex flex-col gap-10 w-full items-center px-4 sm:px-10 lg:px-20 py-10"
+      className="flex flex-col gap-10 w-full items-center px-4 sm:px-10 lg:px-20"
     >
       {/* Header Section */}
       <div className="text-center">
