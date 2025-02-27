@@ -6,7 +6,7 @@ const currency = "KSH";
 const plans = [
   {
     name: "Website",
-    price: "15,000", // Adjusted to reflect realistic market rates
+    price: "15,000",
     features: [
       "Custom Design",
       "Responsive Design (Mobile & Tablet Optimization)",
@@ -15,9 +15,8 @@ const plans = [
       "Social Media Links Integration",
       "Email Accounts",
       "Max 10 Pages",
-      "Max 5 revisions",
+      "Max 5 Revisions",
       "Dedicated Support",
-      "1-Month Maintenance and Updates",
     ],
   },
   {
@@ -27,27 +26,28 @@ const plans = [
       "Custom Dashboard or Admin Panel",
       "Responsive Design (Mobile & Tablet Optimization)",
       "SEO Optimization",
-      "Dedicated Support",
       "User Authentication System (Login/Signup)",
-      "Custom Forms and Interactive Features",
-      "API Integration (Payment Gateway etc.)",
+      "API Integration (Payment Gateway, etc)",
       "E-commerce Solutions",
-      "1-Month Maintenance and Updates",
+      "Performance Optimization",
+      "Max 5 Revisions",
+      "Dedicated Support",
     ],
   },
   {
     name: "Mobile Application",
-    price: "70,000", // Kept as "Custom" for flexibility
+    price: "70,000",
     features: [
       "Cross-Platform Development (iOS and Android)",
-      "UI/UX Design Customization",
+      "Custom Application Design",
+      "3rd Party API integrations",
       "Push Notifications and Alerts",
       "In-App Purchases or Monetization Features",
       "Integration with Backend Services",
       "Performance Optimization for App Stores",
       "E-commerce Solutions",
+      "Max 5 Revisions",
       "Dedicated Support",
-      "1-Month Maintenance and Updates",
     ],
   },
 ];
@@ -64,23 +64,23 @@ const Pricing = () => {
           Pricing Plans
         </h2>
         <p className="text-sm sm:text-base text-gray-700">
-          Choose the perfect service for your business needs. Flexible pricing with
-          no hidden costs.
+          Choose the perfect service for your business needs. Flexible pricing
+          with no hidden costs.
         </p>
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full max-w-screen-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full">
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className="flex flex-col gap-5 bg-white p-5 shadow-lg rounded-lg"
+            className="flex flex-col gap-2 bg-white p-5 shadow-lg rounded-lg"
           >
             {/* Plan Name */}
-            <h3 className="text-2xl font-bold text-center">{plan.name}</h3>
+            <h3 className="text-xl font-bold text-center">{plan.name}</h3>
 
             {/* Price */}
-            <p className="text-3xl font-extrabold text-gray-800 text-center">
+            <p className="text-2xl font-bold text-gray-800 text-center">
               Starting at {plan.price} {currency}
             </p>
             {/* Features List */}
