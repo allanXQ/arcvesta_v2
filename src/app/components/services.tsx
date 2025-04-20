@@ -40,6 +40,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
                   alt="check mark"
                   width={20}
                   height={20}
+                  className="w-4 h-4"
                 />
                 <p>{typeof feature === "string" ? feature : feature.title}</p>
               </div>
@@ -117,16 +118,21 @@ const Services = () => {
         },
       ],
       featureType: "details",
-      imageSrc: "/images/services/webdesign.png",
+      imageSrc: "/images/services/webapp2.png",
       reverse: true,
     },
     {
       title: "Mobile Application Development",
       description:
         "In today’s fast-paced digital world, having a robust mobile presence is crucial for any business. Our mobile app development services are designed to create high-performance, feature-rich applications for iOS, Android, and cross-platform environments. We combine cutting-edge technology with creative design to deliver apps that align with your brand’s identity while providing an engaging and seamless user experience.",
-      features: null,
-      featureType: null,
-      imageSrc: "/images/services/webdesign.png",
+      featureType: "list",
+      imageSrc: "/images/services/mobileapp.png",
+      features: [
+        "iOS Development",
+        "Android Development",
+        "Cross-Platform Development",
+        "App Store Optimization",
+      ],
       reverse: false,
     },
   ];
