@@ -78,43 +78,57 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 const Services = () => {
   const services: ServiceSectionProps[] = [
     {
-      title: "Website Design and Development",
+      title: "Website Design & Development",
       description:
-        "We create visually appealing, user-friendly websites that not only reflect your brand's unique identity but also captivate and engage your audience, driving higher levels of interaction and ensuring a memorable online experience for your customers.",
+        "Captivating websites that blend style with function. We create user-friendly digital experiences that engage visitors and showcase your brand's unique identity.",
+      featureType: "details",
       features: [
-        "Responsive Design",
-        "Custom Design",
-        "SEO Optimized",
-        "Content Management",
+        {
+          title: "Responsive Design",
+          description:
+            "Perfect viewing on all devices from desktops to smartphones.",
+        },
+        {
+          title: "Custom Design",
+          description:
+            "Unique visuals that reflect your brand and connect with your audience.",
+        },
+        {
+          title: "SEO Optimization",
+          description:
+            "Built to boost visibility and drive more organic traffic.",
+        },
+        {
+          title: "Content Management",
+          description: "Easy tools to update and manage your website content.",
+        },
       ],
-      featureType: "list",
       imageSrc: "/images/services/webdesign.png",
       reverse: false,
     },
     {
       title: "Web Application Development",
       description:
-        "In contrast to traditional websites, which primarily serve as informational platforms, web applications are interactive, dynamic systems designed to perform specific functions or tasks online. Our web application development services focus on creating robust, scalable, and secure applications that deliver seamless user experiences and drive productivity.",
+        "Powerful web apps that solve real business problems. We deliver interactive, secure solutions that transform how you operate online.",
       features: [
         {
-          title: "Custom Development",
+          title: "Custom Solutions",
           description:
-            "Tailored applications to meet your unique business needs.",
+            "Tailored applications built for your specific business needs.",
         },
         {
-          title: "Scalable",
+          title: "Scalable Architecture",
           description:
-            "Built to grow with your business and handle increasing traffic.",
+            "Systems that grow with your business and handle increased demand.",
         },
         {
-          title: "Secure",
+          title: "Enhanced Security",
           description:
-            "Implementing the latest security measures to protect against threats.",
+            "Industry-best practices to protect your data and users.",
         },
         {
-          title: "User-friendly",
-          description:
-            "Intuitive and easy-to-use applications for a positive user experience.",
+          title: "Intuitive Interfaces",
+          description: "User-friendly designs that simplify complex tasks.",
         },
       ],
       featureType: "details",
@@ -124,14 +138,29 @@ const Services = () => {
     {
       title: "Mobile Application Development",
       description:
-        "In today’s fast-paced digital world, having a robust mobile presence is crucial for any business. Our mobile app development services are designed to create high-performance, feature-rich applications for iOS, Android, and cross-platform environments. We combine cutting-edge technology with creative design to deliver apps that align with your brand’s identity while providing an engaging and seamless user experience.",
-      featureType: "list",
+        "Connect with users anywhere through standout mobile apps. We combine smart technology with sharp design for exceptional iOS, Android, and cross-platform experiences.",
+      featureType: "details",
       imageSrc: "/images/services/mobileapp.png",
       features: [
-        "iOS Development",
-        "Android Development",
-        "Cross-Platform Development",
-        "App Store Optimization",
+        {
+          title: "iOS Development",
+          description: "High-performance apps that leverage Apple's ecosystem.",
+        },
+        {
+          title: "Android Development",
+          description:
+            "Responsive apps optimized for the diverse Android landscape.",
+        },
+        {
+          title: "Cross-Platform Solutions",
+          description:
+            "Consistent quality and functionality across multiple platforms.",
+        },
+        {
+          title: "App Store Optimization",
+          description:
+            "Strategic positioning to maximize visibility and downloads.",
+        },
       ],
       reverse: false,
     },
