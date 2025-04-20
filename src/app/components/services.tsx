@@ -26,27 +26,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
 }) => {
   return (
     <div
-      className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} gap-20 justify-center items-center flex-wrap lg:flex-nowrap`}
+      className={`flex ${reverse ? "flex-row-reverse" : "flex-row"} gap-5 justify-center items-center flex-wrap lg:flex-nowrap`}
     >
       <div className="flex flex-col gap-4 lg:max-w-xl">
         <h2 className="font-bold text-2xl">{title}</h2>
         <p>{description}</p>
-        {features && featureType === "list" && (
-          <div className="grid w-full grid-cols-2 gap-4">
-            {features.map((feature, index) => (
-              <div key={index} className="flex gap-4 items-center">
-                <Image
-                  src="/images/icons/check.jpg"
-                  alt="check mark"
-                  width={20}
-                  height={20}
-                  className="w-4 h-4"
-                />
-                <p>{typeof feature === "string" ? feature : feature.title}</p>
-              </div>
-            ))}
-          </div>
-        )}
         {features && featureType === "details" && (
           <div className="grid w-full grid-cols-2 gap-4 items-start justify-center">
             {features.map((feature, index) => (
